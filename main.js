@@ -3,18 +3,18 @@
 const friends = ['Emy', 'Abby', "Mariia"];
 
 //for
-function JoinFor(arr) {
-    let result = '';
 
-    for (let i = 0; i < arr.length; i++) {
-        if (i > 0) result += ',';
-        result += arr[i];
-    }
+let result = '';
 
-    return result;
+for (let i = 0; i < friends.length; i++) {
+  if (i !== 0) {
+    result += ',';  
+  }
+  result += friends[i];  
 }
 
-console.log(JoinFor(friends));
+console.log(result);  
+
 
 //join()
 console.log(['Emy', 'Abby', 'Mariia'].join(', '));
